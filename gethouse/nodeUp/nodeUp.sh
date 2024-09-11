@@ -28,8 +28,26 @@ gethArg=$1
 #TYPE 4 with staking (Sepolia)
 lighthouseArg=$2
 
+# Debug output
+echo "Starting geth with argument: $gethArg"
+echo "Starting lighthouse with argument: $lighthouseArg"
+
 # Create a new screen session for gethUp.sh
 screen -dmS gethSession bash -c "./gethUp.sh $gethArg"
 
+# Check if geth session started
+if screen -list | grep -q "gethSession"; then
+    echo "gethSession started successfully."
+else
+    echo "Failed to start gethSession."
+fi
+
 # Create a new screen session for lighthouseUp.sh
 screen -dmS lighthouseSession bash -c "./lighthouseUp.sh $lighthouseArg"
+
+# Check if lighthouse session started
+if screen -list | grep -q "lighthouseSession"; then
+    echo "lighthouseSession started successfully."
+else
+    echo "Failed to start lighthouseSession."
+fi
