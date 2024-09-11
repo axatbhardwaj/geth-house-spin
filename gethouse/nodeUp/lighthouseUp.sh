@@ -18,7 +18,7 @@ type=$1
 case $type in
     1)lighthouse beacon_node --network mainnet --datadir /data/ethereum --http --execution-endpoint http://localhost:8551 --execution-jwt /secrets/jwt.hex --checkpoint-sync-url https://mainnet.checkpoint.sigp.io --disable-deposit-contract-sync;;
     2)lighthouse beacon_node --network mainnet --datadir /data/ethereum --http --execution-endpoint http://localhost:8551 --execution-jwt /secrets/jwt.hex --checkpoint-sync-url https://mainnet.checkpoint.sigp.io;;
-    3)lighthouse beacon_node --network sepolia --datadir /data/ethereum --http --execution-endpoint http://localhost:8551 --execution-jwt /secrets/jwt.hex --checkpoint-sync-url https://sepolia.checkpoint.sigp.io --disable-deposit-contract-sync;;
-    4)lighthouse beacon_node --network sepolia --datadir /data/ethereum --http --execution-endpoint http://localhost:8551 --execution-jwt /secrets/jwt.hex --checkpoint-sync-url https://sepolia.checkpoint.sigp.io;;
+    3)lighthouse beacon_node --network sepolia --datadir /data/ethereum --http --execution-endpoint http://localhost:8551 --execution-jwt /secrets/jwt.hex --checkpoint-sync-url https://sepolia.beaconstate.info/ --disable-deposit-contract-sync;;
+    4)lighthouse beacon_node --network sepolia --datadir /data/ethereum --http --execution-endpoint http://localhost:8551 --execution-jwt /secrets/jwt.hex --checkpoint-sync-url https://sepolia.beaconstate.info/;;
     *) echo "Invalid Argument enter a type in flag"
 esac
