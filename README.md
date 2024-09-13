@@ -11,21 +11,36 @@ The `nodeUp.sh` script accepts two arguments as integers:
 
 1. First argument for the Type of execution client:
 
-   1. 1 full node without RPC (Mainnet)
-   2. 2 full node with RPC (Mainnet)
-   3. 3 archive node without RPC (Mainnet)
-   4. 4 archive node with RPC (Mainnet)
-   5. 5 snap node without RPC (Mainnet)
-   6. 6 snap node with RPC (Mainnet)
-   7. 7 full node without RPC (Sepolia)
-   8. 8 full node with RPC (Sepolia)
-   9. 9 archive node without RPC (Sepolia)
-   10. 10 archive node with RPC (Sepolia)
-   11. 11 snap node without RPC (Sepolia)
-   12. 12 snap node with RPC (Sepolia)
+   - 1 full node without RPC (Mainnet)
+   - 2 full node with RPC (Mainnet)
+   - 3 archive node without RPC (Mainnet)
+   - 4 archive node with RPC (Mainnet)
+   - 5 snap node without RPC (Mainnet)
+   - 6 snap node with RPC (Mainnet)
+   - 7 full node without RPC (Sepolia)
+   - 8 full node with RPC (Sepolia)
+   - 9 archive node without RPC (Sepolia)
+   - 10 archive node with RPC (Sepolia)
+   - 11 snap node without RPC (Sepolia)
+   - 12 snap node with RPC (Sepolia)
+   - 13 full node without RPC (Holesky)
+   - 14 full node with RPC (Holesky)
+   - 15 archive node without RPC (Holesky)
+   - 16 archive node with RPC (Holesky)
+   - 17 snap node without RPC (Holesky)
+   - 18 snap node with RPC (Holesky)
 
 2. Second argument for the Type of consensus client:
-   1. 1 without staking (Mainnet)
-   2. 2 with staking (Mainnet)
-   3. 3 without staking (Sepolia)
-   4. 4 with staking (Sepolia)
+
+   - 1 without staking (Mainnet)
+   - 2 without staking (Mainnet) with RPC
+   - 3 with staking (Mainnet)
+   - 4 with staking (Mainnet) with RPC
+   - 5 without staking (Sepolia)
+   - 6 without staking (Sepolia) with RPC
+   - 7 with staking (Sepolia)
+   - 8 with staking (Sepolia) with RPC
+   - 9 without staking (Holesky)
+   - 10 without staking (Holesky) with RPC
+   - 11 with staking (Holesky)
+   - 12 with staking (Holesky) with RPC
